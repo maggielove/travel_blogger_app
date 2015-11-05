@@ -9,7 +9,7 @@
 <% @user.posts.each do |post| %>
   <ul>
   <li>
-    <%= post.title %>
+    <%= link_to "#{post.title}", "/users/#{@user.id}/posts/#{post.id}" %>
   </li>
 </ul>
 <% end %>

@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
 
-  def index
+  include PostsHelper
 
+  def index
   end
 
   def show
@@ -10,9 +11,18 @@ class PostsController < ApplicationController
   end
 
   def new
+    @user = User.find(params[:user_id])
+    @post = @user.posts.new
   end
 
   def create
+
+    @user = User.find(params[:user_id])
+    @post = @user.posts.new(post_params)
+    @post.save
+
+    redirect_to "/users/#{@user.id}/posts/#{@post.id}"
+
   end
 
   def edit
