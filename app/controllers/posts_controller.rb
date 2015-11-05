@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  include PostsHelper
+  # include PostsHelper
 
   def index
   end
@@ -17,6 +17,7 @@ class PostsController < ApplicationController
 
   def create
     @user = User.find(params[:user_id])
+    binding.pry
     @post = @user.posts.new(post_params)
     @post.save
 
@@ -39,5 +40,12 @@ class PostsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title, :body)
+  end
+
 
 end
