@@ -27,7 +27,6 @@ class PostsController < ApplicationController
   end
 
   def update
-
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
     @post.update(post_params)
