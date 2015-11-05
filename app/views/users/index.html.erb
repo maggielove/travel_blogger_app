@@ -1,0 +1,10 @@
+<h1>Travel Blogger Contributors</h1>
+
+
+<% @users.each do |user| %>
+  <ul>
+  <li>
+    <%= link_to "#{user.byline_name}", user_path(user) %>
+  </li>
+</ul>
+<% end %>
