@@ -7,17 +7,16 @@ class PostsController < ApplicationController
 
   def show
     @user = User.find(params[:user_id])
-    @post = Post.find(params[:id])
+    @post = @user.posts.find(params[:id])
   end
 
   def new
     @user = User.find(params[:user_id])
-    @post = @user.posts.new
+    @post = Post.new
   end
 
   def create
     @user = User.find(params[:user_id])
-    binding.pry
     @post = @user.posts.new(post_params)
     @post.save
 
@@ -39,6 +38,11 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    @user = User.find(params[:user_id])
+    @post = @user.posts.find(params[:id])
+    @post.destroy
+
+    redirect_to "/users/#{@user.id}"
   end
 
   private
