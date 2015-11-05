@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   end
 
   post '/users/:user_id/posts/new' => 'posts#create'
-  patch '/users/:user_id/posts/:id' => 'posts#update'
+  patch '/users/:user_id/posts/:id/edit' => 'posts#update'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
