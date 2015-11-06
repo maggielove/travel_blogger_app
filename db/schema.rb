@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151106000515) do
+ActiveRecord::Schema.define(version: 20151106154849) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cities", force: :cascade do |t|
+    t.string  "name"
+    t.integer "user_id"
+  end
+
+  add_index "cities", ["user_id"], name: "index_cities_on_user_id", using: :btree
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
@@ -29,11 +36,13 @@ ActiveRecord::Schema.define(version: 20151106000515) do
     t.string   "title"
     t.text     "body"
     t.integer  "user_id"
-    t.integer  "category_id"
-    t.integer  "city_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "categorizable_id"
+    t.string   "categorizable_type"
   end
+
+  add_index "posts", ["categorizable_type", "categorizable_id"], name: "index_posts_on_categorizable_type_and_categorizable_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
@@ -44,4 +53,5 @@ ActiveRecord::Schema.define(version: 20151106000515) do
     t.text     "bio"
   end
 
+  add_foreign_key "cities", "users"
 end

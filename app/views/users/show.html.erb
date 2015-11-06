@@ -5,13 +5,18 @@
 <p><strong>Bio:</strong><%= "#{@user.bio}" %></p>
 
 
-<h3><%= "#{@user.byline_name}"'\'s Posts' %></h3>
-<% @user.posts.each do |post| %>
-  <ul>
-  <li>
-    <%= link_to "#{post.title}", "/users/#{@user.id}/posts/#{post.id}" %>
-  </li>
+<h3><%= "#{@user.byline_name}"'\'s Posts by City' %></h3>
+<ul>
+  <% @user.cities.each do |city| %>
+    <li class="city-name">
+      <%= city.name %>
+    </li>
+      <ul>
+        <% city.posts.each do |post| %>
+          <li>
+            <%= link_to "#{post.title}", "/users/#{@user.id}/cities/#{city.id}/posts/#{post.id}" %>
+          </li>
+        <% end %>
+      </ul>
+  <% end %>
 </ul>
-<% end %>
-
-<%= link_to "Home", "/" %>

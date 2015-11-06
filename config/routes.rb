@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :users do
-    resources :posts do
-      resources :comments
+    resources :cities do
+      resources :posts do
+        resources :comments
+      end
     end
   end
 

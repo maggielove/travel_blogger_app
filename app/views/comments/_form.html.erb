@@ -1,7 +1,7 @@
 <h3>Post a Comment</h3>
 <p>(Comment form will go here)</h3>
 
-  <%= form_for [ @user, @post, @comment ], html: {method: "post"} do |f| %>
+  <%= form_for [ @user, @city, @post, @comment ], html: {method: "post"} do |f| %>
 
     <p>
       <%= f.label :content, "Your Comment" %><br>
