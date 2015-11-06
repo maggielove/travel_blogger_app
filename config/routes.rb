@@ -2,11 +2,14 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :users do
-    resources :posts
+    resources :posts do
+      resources :comments
+    end
   end
 
   post '/users/:user_id/posts/new' => 'posts#create'
   patch '/users/:user_id/posts/:id/edit' => 'posts#update'
+  post '/users/:user_id/posts/:post_id/comments' => 'comments#create'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'

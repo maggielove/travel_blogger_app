@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   def show
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
+    @comment = Comment.new
+    @comment.post_id = @post.id
   end
 
   def new
@@ -14,6 +16,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    
     @user = User.find(params[:user_id])
     @post = @user.posts.new(post_params)
     @post.save
