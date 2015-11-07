@@ -1,7 +1,12 @@
 <div class="post-title">
   <h2><%= "#{@post.title}" %></h2>
 </div>
-
+<p>
+  Cities:
+  <% @post.cities.each do |city| %>
+    <%= link_to city.name, city_path(city) %>
+  <% end %>
+</p>
 <div class="post-byline">
   <p><%= link_to "#{@post.byline}".upcase, user_path(@user) %></p>
 </div>
