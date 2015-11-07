@@ -5,6 +5,9 @@
 <div class="post-byline">
   <p><%= link_to "#{@post.byline}".upcase, user_path(@user) %></p>
 </div>
+<% if @post.image.exists? %>
+  <%= image_tag @post.image.url(:medium) %><br>
+<% end %>
 
 <div class="post-body">
   <%= "#{@post.body}" %>

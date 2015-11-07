@@ -2,6 +2,11 @@
 
 <h3><%= "@#{@user.username}" %></h3>
 
+<% if @user.image.exists? %>
+  <%= image_tag @user.image.url(:medium) %><br>
+<% end %>
+
+
 <p><strong>Bio:</strong><%= "#{@user.bio}" %></p>
 
 

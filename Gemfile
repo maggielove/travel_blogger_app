@@ -7,6 +7,7 @@ gem 'rails', '4.2.4'
 gem 'pg'
 gem 'bcrypt'
 gem 'pry-rails'
+gem 'paperclip'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

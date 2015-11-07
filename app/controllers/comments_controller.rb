@@ -2,10 +2,12 @@ class CommentsController < ApplicationController
 
 
   def create
+    binding.pry
+    current_user
     @user = User.find(params[:user_id])
     @post = Post.find(params[:post_id])
     @comment = Comment.new(comment_params)
-    @comment.author = current_user.username
+    @comment.author = "Guest" unless current_user
     @comment.post_id = params[:post_id]
     @comment.post.user_id = params[:user_id]
 

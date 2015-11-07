@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     user = User.new(user_params)
 
     if user.save
-      redirect_to '/'
+      redirect_to "/users/#{user.id}"
     else
       redirect_to 'users/new'
     end
@@ -31,7 +31,8 @@ class UsersController < ApplicationController
       :password,
       :password_confirmation,
       :byline_name,
-      :bio
+      :bio,
+      :image
     )
   end
 
