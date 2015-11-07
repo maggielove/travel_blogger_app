@@ -14,6 +14,10 @@
     <%= f.text_area :body %><br>
   </p>
   <p>
+    <%= f.label :city_list %><br>
+    <%= f.text_field :city_list %>
+  </p>
+  <p>
     <% if @post.image.exists? %>
       <%= image_tag @post.image.url(:medium) %><br>
     <% end %>

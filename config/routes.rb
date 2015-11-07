@@ -6,6 +6,7 @@ Rails.application.routes.draw do
         resources :comments
       end
   end
+  resources :cities
 
   #get 'users/:user_id/posts/new' => 'posts#new'
   post '/users/:user_id/posts/new' => 'posts#create'
