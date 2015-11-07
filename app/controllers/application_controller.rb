@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   helper_method(:current_user)
 
   def authorize
-    redirect_to "/login" unless current_user
+    redirect_to "/login" unless current_user.id.to_s === params[:user_id]
   end
 
   protect_from_forgery with: :exception

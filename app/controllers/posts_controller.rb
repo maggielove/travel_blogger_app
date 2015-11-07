@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_action :authorize, except: [:index, :show]
+  before_action :authorize, except: [:index, :show, :new, :create]
 
   def index
   end
