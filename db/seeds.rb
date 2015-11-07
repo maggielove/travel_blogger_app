@@ -12,12 +12,12 @@ b = User.create(username: 'user2', password: 'password', password_confirmation: 
 c = User.create(username: 'user3', password: 'password', password_confirmation: 'password', byline_name: 'User the Third', bio: 'Around the world in 80 days')
 
 
-a.posts.create(title: 'London Calling', body: 'London test post')
+a.posts.create(title: 'London Calling', byline: a.byline_name, body: 'London test post')
 
-a.posts.create(title: 'Vacationing in Rome', body: 'Eat pray loving it. Mostly eating.')
+a.posts.create(title: 'Vacationing in Rome', byline: a.byline_name, body: 'Eat pray loving it. Mostly eating.')
 
-b.posts.create(title:'Limoges Post', body: 'Sample Limoges post body.')
+b.posts.create(title:'Limoges Post', byline: b.byline_name, body: 'Sample Limoges post body.')
 
-b.posts.create(title: 'Bordeaux Post', body: 'Sample Bordeaux post.')
+b.posts.create(title: 'Bordeaux Post', byline: b.byline_name, body: 'Sample Bordeaux post.')
 
-c.posts.create(title: 'Amsterdam Post', body: 'Went to the Van Gogh Museum. It was pretty cool.')
+c.posts.create(title: 'Amsterdam Post', byline: c.byline_name, body: 'Went to the Van Gogh Museum. It was pretty cool.')

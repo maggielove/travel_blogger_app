@@ -2,8 +2,9 @@
 
   <%= form_for [ @user, @city, @post, @comment ], html: {method: "post"} do |f| %>
 
+  
     <p>
-      <%= f.label :content, "Your Comment" %><br>
+      <%= f.label :content, "@#{current_user.username}:" %><br>
       <%= f.text_area :content %>
     </p>
     <p>

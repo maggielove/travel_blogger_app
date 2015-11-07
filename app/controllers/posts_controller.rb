@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  before_action :authorize, except: [:index, :show]
+
   def index
   end
 
@@ -11,14 +13,15 @@ class PostsController < ApplicationController
   end
 
   def new
-    @user = User.find(params[:user_id])
+    @user = current_user
     @post = @user.posts.new
+    @post.byline = @user.byline_name
   end
 
   def create
-
-    @user = User.find(params[:user_id])
+    @user = current_user
     @post = @user.posts.new(post_params)
+    @post.byline = @user.byline_name
     @post.save
 
     redirect_to "/users/#{@user.id}/posts/#{@post.id}"
@@ -48,7 +51,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :byline)
   end
 
 
