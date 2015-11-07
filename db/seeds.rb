@@ -11,6 +11,7 @@ b = User.create(username: 'user2', password: 'password', password_confirmation: 
 
 c = User.create(username: 'user3', password: 'password', password_confirmation: 'password', byline_name: 'User the Third', bio: 'Around the world in 80 days')
 
+
 a.posts.create(title: 'London Calling', body: 'London test post')
 
 a.posts.create(title: 'Vacationing in Rome', body: 'Eat pray loving it. Mostly eating.')
