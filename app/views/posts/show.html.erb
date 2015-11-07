@@ -3,7 +3,7 @@
 </div>
 
 <div class="post-byline">
-  <p><%= "#{@post.byline}".upcase %></p>
+  <p><%= link_to "#{@post.byline}".upcase, user_path(@user) %></p>
 </div>
 
 <div class="post-body">
