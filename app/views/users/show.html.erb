@@ -6,12 +6,12 @@
 
 
 <h3><%= "#{@user.byline_name}"'\'s Posts' %></h3>
-<% @user.posts.each do |post| %>
-  <ul>
-  <li>
-    <%= link_to "#{post.title}", "/users/#{@user.id}/posts/#{post.id}" %>
-  </li>
+<ul>
+    <% @user.posts.each do |post| %>
+      <li>
+        <%= link_to "#{post.title}", "/users/#{@user.id}/posts/#{post.id}" %>
+      </li>
+    <% end %>
 </ul>
-<% end %>
 
 <%= link_to "Home", "/" %>

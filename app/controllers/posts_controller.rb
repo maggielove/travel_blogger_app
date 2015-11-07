@@ -12,11 +12,11 @@ class PostsController < ApplicationController
 
   def new
     @user = User.find(params[:user_id])
-    @post = Post.new
+    @post = @user.posts.new
   end
 
   def create
-    
+
     @user = User.find(params[:user_id])
     @post = @user.posts.new(post_params)
     @post.save
