@@ -1,26 +1,28 @@
-<h2 class="profile-header"><%= "#{@user.byline_name}"'\'s Profile' %></h2>
 
-<h3 class="profile-header"><%= "@#{@user.username}" %></h3>
+<div id="user-details">
+
+  <div id="user-info">
+    <h2 class="profile-header"><%= "#{@user.byline_name}" %></h2>
+
+    <h3 class="profile-header"><%= "@#{@user.username}" %></h3>
+
+    <p class="profile-header"><span id="user-bio-title">Bio:</span><%= "#{@user.bio}" %></p>
+  </div>
 
 
-<%= image_tag @user.image.url(:medium) %><br>
+  <div id="user-image"><%= image_tag @user.image.url(:medium) %><br></div>
+</div>
 
 
 
-<p class="profile-header"><span id="user-bio-title">Bio:</span><%= "#{@user.bio}" %></p>
 
-
-<h3 id="post-list-header"><%= "#{@user.byline_name}"'\'s Posts' %></h3>
-<ul id="user-links">
-    <% @user.posts.each do |post| %>
-      <li>
-        <%= link_to "#{post.title}", "/users/#{@user.id}/posts/#{post.id}" %>
-      </li>
-    <% end %>
-</ul>
-
-<div class="nav-bar">
-  <%= link_to "Home", "/" %>
-
-  <%= link_to "All Users", "/users" %>
+<div id="user-posts">
+  <h3 id="post-list-header"><%= "#{@user.byline_name}"'\'s Posts' %></h3>
+  <ul id="user-links">
+      <% @user.posts.each do |post| %>
+        <li>
+          <%= link_to "#{post.title}", "/users/#{@user.id}/posts/#{post.id}" %>
+        </li>
+      <% end %>
+  </ul>
 </div>
