@@ -23,3 +23,69 @@
 # b.posts.create(title: 'Bordeaux Post', byline: b.byline_name, body: 'Sample Bordeaux post.')
 #
 # c.posts.create(title: 'Amsterdam Post', byline: c.byline_name, body: 'Went to the Van Gogh Museum. It was pretty cool.')
+
+d = User.create(username: 'princesscbh', password: 'password', password_confirmation: 'password', byline_name: 'Phoebe Buffay', bio: 'Traveling the  world, loving life')
+
+ d.posts.create(title: 'Midnight in Paris', byline: d.byline_name, body:
+   'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+   Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+   )
+
+   d.posts.create(title: 'Surrealist Paris', byline: d.byline_name, body:
+     'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+     Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+     )
+
+     d.posts.create(title: 'Following in Elaine Dundy\'s Footsteps', byline: d.byline_name, body:
+       'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+       Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+       )
+
+    d.posts.create(title: 'Anarchists in Berlin', byline: d.byline_name, body:
+         'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+         Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+         )
+
+
+
+e = User.create(username: 'ams92', password: 'password', password_confirmation: 'password', byline_name: 'Amandla Smith', bio: 'Getting lost, staying lost')
+
+e.posts.create(title: 'Berlin Street Style', byline: e.byline_name, body:
+  'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+  Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+  )
+
+  e.posts.create(title: 'Berlin Graffiti', byline: e.byline_name, body:
+       'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+       Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+       )
+
+    e.posts.create(title: 'Contemporary Art Spots', byline: e.byline_name, body:
+            'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+            Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+            )
+
+    e.posts.create(title: 'Biking Amsterdam', byline: e.byline_name, body:
+      'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+      Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+                    )
+
+    e.posts.create(title: 'Visiting the Van Gogh Museum', byline: e.byline_name, body:
+    'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+    Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+                                    )
+
+  e.posts.create(title: 'Anne Frank House Trip', byline: e.byline_name, body:
+      'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
+
+      Eum modo suscipit ex, aperiri oblique delenit et mel, nec probo iracundia interpretaris ut. Aliquip fabulas molestiae eos in, pro ad wisi legere vituperatoribus, intellegat necessitatibus ut pro. Nam in nostro utroque. In nec verear dissentias inciderint, sint dicit eos an. Alii graeci eligendi sea in, duo everti vivendo cu. Saperet intellegam vim et. Pro eu error singulis.'
+                                                                    )
