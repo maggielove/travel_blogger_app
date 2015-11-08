@@ -2,12 +2,62 @@
 
 <div id="featured">
   <h2 class="homepage-header">Featured Stories</h2>
-  <p>Images Placeholder</p>
+  <div id="feature-1">
+    <img src= "assets/amsterdam_trekearth.jpeg" width="300" height="200">
+    <%= link_to "Amsterdam Post", "/users/" %>
+  </div>
+  <div id="feature-2">
+    <img src="assets/berlin_carpeberlin.jpg" width="300" height="200">
+      <%= link_to "Berlin Post", "/users/" %>
+  </div>
+  <div id="feature-3">
+    <img src="assets/paris_odyseeyonline.jpeg" width="300" height="200">
+      <%= link_to "Paris Post", "/users/" %>
+  </div>
 
+<div id="destinations">
   <h2 class="homepage-header">Top Destinations</h2>
-    <h3 >Paris</h3>
-    <h3>Berlin</h3>
-    <h3>Amsterdam</h3>
+    <div id="first-city">
+      <h3>Paris</h3>
+      <ul>
+        <li>
+          <%= link_to "Paris Post", "/users/" %>
+        </li>
+        <li>
+          <%= link_to "Paris Post 2", "/users" %>
+        </li>
+        <li>
+          <%= link_to "Paris Post 3", "/users" %>
+        </li>
+      </ul>
+    </div>
+    <div id="second-city">
+      <h3>Berlin</h3>
+      <ul>
+        <li>
+          <%= link_to "Berlin Post", "/users/" %>
+        </li>
+        <li>
+          <%= link_to "Berlin Post 2", "/users" %>
+        </li>
+        <li>
+          <%= link_to "Berlin Post 3", "/users" %>
+      </ul>
+    </div>
+    <div id="third-city">
+      <h3>Amsterdam</h3>
+      <ul>
+        <li>
+          <%= link_to "Amsterdam Post", "/users/" %>
+        </li>
+        <li>
+          <%= link_to "Amsterdam Post 2", "/users" %>
+        </li>
+        <li>
+          <%= link_to "Amsterdam Post 3", "/users" %>
+      </ul>
+    </div>
+ </div>
 </div>
 
 <div id="sidebar">

@@ -19,7 +19,8 @@ body {
   width: 1300px;
   margin: 0 auto;
   float: none;
-  position: absolute
+  position: absolute;
+  /*overflow: hidden;*/
 }
 
 /*#page-wrap {
@@ -60,7 +61,7 @@ ul {
 
 #featured {
   text-align: center;
-  width: 60%;
+  width: 80%;
   display: block;
   margin: 0 auto;
   margin-top: 80px;
@@ -68,7 +69,56 @@ ul {
 
 #sidebar {
   float: right;
-  margin-top: -150px;
+  margin-top: -510px;
+  margin-left: 800px;
+  margin-right: 0;
+
+}
+
+#destinations {
+  margin-top: 100px;
+  margin-right: 130px;
+}
+
+#first-city {
+  text-align: center;
+  float: left;
+  margin-top: -20px;
+  font-family: 'Bitter', serif;
+}
+
+#second-city {
+  text-align: center;
+  font-family: 'Bitter', serif;
+  margin-right: 150px;
+}
+
+#third-city {
+  text-align: center;
+  float: right;
+  margin-top: -135px;
+  font-family: 'Bitter', serif;
+}
+
+#feature-1 {
+  float: left;
+  font-family: 'Bitter', serif;
+  display: block;
+  width: 300px;
+}
+
+#feature-2 {
+  font-family: 'Bitter', serif;
+  width: 300px;
+  margin-left: 310px;
+}
+
+#feature-3 {
+  float: right;
+  font-family: 'Bitter', serif;
+  width: 300px;
+  margin-right: 120px;
+  margin-top: -222px
 }
 
 /*user page*/
