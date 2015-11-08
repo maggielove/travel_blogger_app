@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
   belongs_to :locating
   has_many :cities, through: :locating
   has_many :comments
-  has_attached_file :image, styles: { medium: "500x400>", thumb: "100x100>" }
+  has_attached_file :image, styles: { medium: "910x520>", thumb: "100x100>" }
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 
   def city_list

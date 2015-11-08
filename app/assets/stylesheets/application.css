@@ -187,6 +187,13 @@ ul {
   margin-top: 80px;
 }
 
+#post-body {
+  width: 800px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
 .post-title {
   font-family: 'Bitter', serif;
 }
