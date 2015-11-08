@@ -31,6 +31,7 @@ body {
 #session-info {
   font-family: 'PT Sans', sans-serif;
   float: right;
+  margin-top: -20px;
 }
 
 #site-title {
@@ -52,6 +53,8 @@ ul {
 
 .nav-bar {
   font-family: 'PT Sans', sans-serif;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
 /*Homepage*/
