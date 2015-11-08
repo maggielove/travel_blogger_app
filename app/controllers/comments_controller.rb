@@ -1,19 +1,19 @@
 class CommentsController < ApplicationController
 
 
-  # def comment_author
-  #   if current_user
-  #     @comment.author = current_user.username
-  #   else
-  #     @comment.author = "Guest"
-  #   end
-  # end
+  def new
+    @user = current_user
+  end
 
   def create
-    current_user
+
     @user = User.find(params[:user_id])
     @post = Post.find(params[:post_id])
     @comment = Comment.new(comment_params)
+    #current_user.image = ("#{current_user.image}")
+    #current_user ? (@comment.image = current_user.image) : (@comment.image)
+    #@comment.image = current_user.image if current_user
+    #If there is a current user, set author to current user. Otherwise, author is "Guest"
     current_user ? (@comment.author = "@#{current_user.username}") : (@comment.author = "Guest")
     @comment.post_id = params[:post_id]
     @comment.post.user_id = params[:user_id]
@@ -26,6 +26,6 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:content, :author)
+    params.require(:comment).permit(:content, :author, :image)
   end
 end

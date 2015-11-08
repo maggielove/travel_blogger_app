@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,200' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
   <title>Travel Blogger</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -8,7 +14,7 @@
 </head>
 <body>
 
-<div>
+<div id="session-info">
   <% if current_user %>
     hello <%= current_user.username %> | <%= link_to "Log Out", '/logout' %>
   <% else %>
@@ -16,7 +22,7 @@
   <% end %>
 </div>
 
-<h1>Travel Blogger</h1>
+<h1 id="site-title">Travel Blogger</h1>
 
 <%= yield %>
 

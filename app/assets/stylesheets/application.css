@@ -13,3 +13,112 @@
  *= require_tree .
  *= require_self
  */
+
+/*Site-wide*/
+body {
+
+}
+
+#session-info {
+  font-family: 'PT Sans', sans-serif;
+}
+
+#site-title {
+  font-family: 'Patua One', cursive;
+}
+
+ul {
+  list-style-type: none
+}
+
+.homepage-links {
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-bar {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*Homepage*/
+.homepage-header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*user page*/
+.profile-header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#user-bio-title {
+  font-weight: 700;
+}
+
+#user-links {
+  font-family: 'Raleway', sans-serif;
+}
+
+#post-list-header {
+  font-family: 'Bitter', serif;
+}
+
+/*City Show Page*/
+#city-header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#city-post-list {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Post view */
+#post-title {
+  font-family: 'Bitter', serif;
+}
+
+#cities-listing {
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#post-byline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+}
+
+#post-body {
+  font-family: 'Merriweather', serif;
+}
+
+#comments-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+/* Comments form */
+#post-comment-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+#comment-content {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+#comment-info {
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  font-size: 12px
+}
+
+.comment-author {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Log In Page*/
+#login-labels {
+  font-family: 'PT Sans', sans-serif;
+}

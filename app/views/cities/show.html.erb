@@ -1,5 +1,12 @@
-<h2>Posts about <%= "#{@city.name}" %></h2>
+<h2 id="city-header">Posts about <%= "#{@city.name}".capitalize %></h2>
 
-<% @city.posts.each do |post| %>
-  <li><%= link_to post.title, "/users/#{post.user_id}/posts/#{post.id}" %></li>
-<% end %>
+<ul id="city-post-list">
+  <% @city.posts.each do |post| %>
+    <li><%= link_to post.title, "/users/#{post.user_id}/posts/#{post.id}" %></li>
+  <% end %>
+</ul>
+
+<div class="nav-bar">
+
+  <%= link_to "home", '/' %>
+</div>

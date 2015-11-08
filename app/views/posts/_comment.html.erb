@@ -1,5 +1,6 @@
 <div>
-  <h4><%= "#{comment.author}:" %></h4>
-  <p class="comment"><%= comment.content %></p>
-  <p>Posted <%= distance_of_time_in_words(comment.post.created_at, comment.created_at) %> later</p>
+  <%#= image_tag @comment.image.url  %>
+  <h4 class="comment-author"><%= "#{comment.author}:" %></h4>
+  <p id="comment-content"><%= comment.content %></p>
+  <p id="comment-info">Posted <%= distance_of_time_in_words(comment.post.created_at, comment.created_at) %> later</p>
 </div>

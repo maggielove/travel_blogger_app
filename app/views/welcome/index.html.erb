@@ -1,7 +1,24 @@
 <p>"Welcome to Travel Blogger!"</p>
 
-<h2>Cities</h2>
+<h2 class="homepage-header">Featured Stories</h2>
+<p>Images Placeholder</p>
 
+<h2 class="homepage-header">Top Destinations</h2>
+
+<h4 class="homepage-header">Cities</h2>
+<ul class="homepage-links">
 <% @cities.each do |city| %>
-  <%= link_to city.name, "/cities/#{city.id}" %>
+  <li>
+    <%= link_to city.name, "/cities/#{city.id}" %>
+  </li>
+<% end %>
+</ul>
+
+<h4 class="homepage-header">Contributors</h2>
+<% @users.each do |user| %>
+  <ul class="homepage-links">
+  <li>
+    <%= link_to "#{user.byline_name}", user_path(user) %>
+  </li>
+</ul>
 <% end %>
