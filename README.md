@@ -59,6 +59,8 @@ I managed the sessions and session personalization using bcrypt and ternary oper
 * For user profile page: add "Member Since [join date]"
 * Give users the option to edit or delete their accounts.
 * Style the new post form so users don't have to drag the post body box to make it bigger. 
+* Make it so that when a user logs in, they are directed to the page they were wanting to visit (ex: a new post form or an edit form), instead of to the home page.
+* Make it more responsive for mobile
 
 
 
