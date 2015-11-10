@@ -1,7 +1,9 @@
 class PostsController < ApplicationController
 
+  # If the user is not logged in, they cannot create, edit or delete posts. 
   before_action :authorize, except: [:index, :show ]
 
+  # If the current user is not the author of the post, they cannot edit or delete it. (method defined in application controller)
   before_action :authorize_strict, except: [:index, :show, :new, :create]
 
   def index

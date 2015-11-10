@@ -64,6 +64,7 @@
 <div id="sidebar">
   <h4 class="homepage-header">Cities</h2>
   <ul class="homepage-links">
+  <!-- Dynamic list: as cities are added to posts, they will be added to this sidebar.  -->
   <% @cities.each do |city| %>
     <li>
       <%= link_to city.name, "/cities/#{city.id}" %>
@@ -72,6 +73,7 @@
   </ul>
 
   <h4 class="homepage-header">Contributors</h2>
+  <!-- Dynamic list: As users create accounts, they will be added to this list. -->
   <% @users.each do |user| %>
     <ul class="homepage-links">
     <li>
