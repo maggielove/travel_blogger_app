@@ -24,7 +24,7 @@
 #
 # c.posts.create(title: 'Amsterdam Post', byline: c.byline_name, body: 'Went to the Van Gogh Museum. It was pretty cool.')
 
-d = User.create(username: 'princesscbh', password: 'password', password_confirmation: 'password', byline_name: 'Phoebe Buffay', bio: 'Traveling the  world, loving life')
+d = User.create(username: 'johnny3000', password: 'password', password_confirmation: 'password', byline_name: 'John Smith', bio: 'Traveling the  world, loving life')
 
  d.posts.create(title: 'Midnight in Paris', byline: d.byline_name, body:
    'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
@@ -52,7 +52,7 @@ d = User.create(username: 'princesscbh', password: 'password', password_confirma
 
 
 
-e = User.create(username: 'ams92', password: 'password', password_confirmation: 'password', byline_name: 'Amandla Smith', bio: 'Getting lost, staying lost')
+e = User.create(username: 'janed90', password: 'password', password_confirmation: 'password', byline_name: 'Jane Smith', bio: 'Getting lost, staying lost')
 
 e.posts.create(title: 'Berlin Street Style', byline: e.byline_name, body:
   'Lorem ipsum dolor sit amet, quo munere soleat corrumpit id, mundi iudico regione eu vim, ex errem alienum nam. Ius ei magna molestie rationibus, ex has feugiat salutandi, in vel hendrerit prodesset necessitatibus. Vix meis pertinacia ut, ornatus constituto omittantur ei eos. In sit vide consulatu. Ei usu omittam petentium expetenda, diam mutat mazim ut mei.
