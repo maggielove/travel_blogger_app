@@ -47,6 +47,21 @@ ul {
   list-style-type: none
 }
 
+a {
+  text-decoration: none;
+  color: #666699;
+
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #808080;
+}
+
 .homepage-links {
   font-family: 'Raleway', sans-serif;
 }
@@ -136,8 +151,7 @@ ul {
 #user-info {
   float: right;
   text-align: left;
-  margin-left: -500px;
-  padding: -100px;
+  margin-right: 10%;
 }
 
 #user-posts {
