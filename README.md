@@ -1,6 +1,9 @@
 # travel_blogger_app (GA Project 2)
 
-[My hosted working app!](https://intense-lowlands-8490.herokuapp.com/)
+[Check out the site](https://intense-lowlands-8490.herokuapp.com/)  
+To log in, please use sample user John Smith:   
+* username: johnny3000  
+* password: password
 
 [Wireframes](https://travelbloggerapp.mybalsamiq.com/projects/travelblogger/edit)
 
