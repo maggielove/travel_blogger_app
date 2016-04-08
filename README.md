@@ -37,9 +37,7 @@ To log in, please use sample user John Smith:
 ---
 #Approach Taken 
 
-I started by wireframing the various views I wanted for my app. Then I diagrammed the relationships between my models. Originally I was shooting for 9 models: User, Post, Comment, Category, City, Tag, Tagging, Liking, and Like. (Category was going to be a sub-category for a city, or a category on its own, such as "Food", "Shopping", "Entertainment", etc. (Tag would be any random tag the user wanted to add.) I then started coding just User and Post, then added Comment. 
-
-Once I tried to add City, it got tricky. I started City as part of a polymorphic association with User and Post (because I wanted each post to have only one city), and nested the route for City between my user and post routes, so a user would have been forced to enter a city before writing a post. This seemed counterintuitive to me, and the nested routes were getting complicated, so I spent many hours going back to a previous commit (since I was doing this all on my master branch) and fixing git merge issues. I ended up using a many_to_many through association, which simplified things (and gives the user the option to create an article without adding a city, which has pros and cons.)
+I started by wireframing the various views I wanted for my app. Then I diagrammed the relationships between my models to determine which active record associations to use.
 
 I managed the sessions and session personalization using bcrypt and ternary operators. Late in the project, I stumbled upon the Devise gem--would be interested to figure out if that would give me more personalization options once a user is logged in. 
 
