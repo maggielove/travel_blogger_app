@@ -9,7 +9,7 @@ To log in, please use sample user John Smith:
 
 ---
 
-###User Stories
+### User Stories
 
 * As a user, if I do not have an account, I want to be able to create an account with a username, short bio, and picture.
 * As a user, I want to be able to write a new blog post and add pictures to the post. 
@@ -27,7 +27,7 @@ To log in, please use sample user John Smith:
 
 ---
 
-#Technologies Used
+# Technologies Used
 
 * **Ruby on Rails**  
     *     gems: Paperclip (dependent on ImageMagick), bcrypt
@@ -35,7 +35,7 @@ To log in, please use sample user John Smith:
 * **Heroku**
 
 ---
-#Approach Taken 
+# Approach Taken 
 
 I started by wireframing the various views I wanted for my app. Then I diagrammed the relationships between my models to determine which active record associations to use.
 
@@ -43,7 +43,7 @@ I managed the sessions and session personalization using bcrypt and ternary oper
 
 ---
 
-#Ideas to Further This App 
+# Ideas to Further This App 
 
 * Attach pictures to comments (similarly to the way I currently have authors assigned) that match a user's profile picture. 
 * Give the user the ability to "like" a post
